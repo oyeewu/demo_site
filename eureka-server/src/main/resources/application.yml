@@ -1,0 +1,12 @@
+server:
+    port: 8091
+spring:
+    application:
+        name: eureka-server
+
+eureka:
+    client:
+        registerWithEureka: false #当前服务不需要注册
+        fetchRegistry: false
+        serviceUrl:
+            defaultZone: http://localhost:8091/eureka/
